@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main"> 
+        <div class="form">
+            <form class="container" action="">
+                <span class="title">Student Registration Form</span>
+                <label for="name" class="nmtitle">Your Name</label>
+                <div class="name">
+                    <div id="fname" >
+                        <input type="text" name="name" required class="fname input1" placeholder="First name">
+                    </div>
+                    <div id="lname">
+                        <input type="text" name="name" required class="fname input1" placeholder="Last name">
+                    </div>
+                </div>
+                <label for="dob" class="nmtitle">Date of Birth: </label>
+                <input type="date" class="input1">
+                <div class="gender">
+                    <label class="nmtitle gen">Gender:</label>
+                    <br>
+                    <br>
+                    <input type="radio" name="gender" id="male" value="male"><label for="male" required> Male</label>
+                    <input type="radio" name="gender" id="female" value="female"><label for="female" required> Female</label>
+                    <input type="radio" name="gender" id="other" value="other"><label for="other" required> Other</label>
+
+                </div>
+                <label for="email" class="nmtitle">Email Address</label>
+                <input type="email" name="email" placeholder="Enter Email" class="input1" required title="Enter a valid email-id">
+                <label for="pwd" class="nmtitle" >Password </label>
+                <input type="password" class="input1" id="pwd" placeholder="Enter your password" required/><br>
+                <label for="num" class="nmtitle">Contact Number</label>
+                <input type="tel" class="input1" pattern="[6-9]{1}[0-9]{9}" required title="Enter a valid mobile number" placeholder="10-digit number">
+                <label for="college" class="nmtitle">College Name</label>
+                <input type="text" name="college"  class="input1" placeholder="College Name">
+                <label for="course" class="nmtitle">Course </label>
+                <select id="course" class="input1" name="course" required>
+                <option value="BTech">BTech</option>
+                <option value="MTech">MTech</option>
+                </select><br>
+                <label for="branch" class="nmtitle">Branch </label>
+                <select id="branch" class="input1" name="branch" required>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Electronics and Communication">Electronics and Communication</option>
+                <option value="Electrical">Electrical</option>
+                <option value="Mechanical">Mechanical</option>
+                <option value="Civil">Civil</option>
+                <option value="Chemical">Chemical</option>
+                <option value="Marine">Marine</option>
+                <option value="Geo Informatics">Geo Informatics</option>
+                <option value="Metallurgical">Metallurgical</option>
+                </select><br>
+                <label for="year" class="nmtitle">Year of study</label>
+                <select id="year" class="input1" name="year" required>
+                <option value="1st year">1st year</option>
+                <option value="2nd year">2nd year</option>
+                <option value="3rd year">3rd year</option>
+                <option value="4th year">4th year</option>
+                </select><br>
+                <label for="rno" class="nmtitle">Registration Number</label>
+                <input type="text" name="rno"  class="input1" placeholder="Enter registration number">
+                <div class="btn">
+                    <button onclick="" class="submitbtn"><span>Register</span></button>
+                </div>
+            </form>
+        </div>
+    </div>    
+</body>
+</html>

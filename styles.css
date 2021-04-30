@@ -1,0 +1,111 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    display: flex;
+    margin: 0;
+    padding: 15px 15px;
+    background: linear-gradient(45deg,#cafa5b,#ff07f3);
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}   
+
+.form{
+    display: block;
+    background: rgba(255, 255, 255, 0.525);
+    box-shadow: 10px 5px rgba(0, 0, 0, 0.123);
+    padding: 55px 95px 68px;
+    border-radius: 10px;
+    color: #000;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-size: 30px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    padding-bottom: 45px;
+    
+}
+.nmtitle{
+    font-size: 15px;
+    padding-bottom: 11px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: rgba(37, 33, 33, 0.767);
+    font-weight: 400;
+}
+input{
+    padding: 0px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #333;
+    border-radius: 2px;
+    border: 1px solid rgb(109, 102, 102);
+    outline: none;
+}
+
+.input1{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 34px;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:768px) {
+    .name{
+        flex-direction: column;
+        
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .container{
+        width: auto;
+        justify-content: center;
+    }
+    
+    .input1{
+        width: 100%;
+    }
+}
+.gender{
+    margin-bottom: 30px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+select{
+    padding: 0px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #333;
+    border-radius: 2px;
+    border: 1px solid rgb(109, 102, 102);
+    outline: none;
+    
+}
+.submitbtn{
+    
+    padding: 20px 15px;
+    border-radius: 20px;
+    border: black;
+    color: rgb(10, 10, 10);
+    font-size: 15px;
+    background: rgba(250, 250, 250, 0.89);
+    
+
+}
+
